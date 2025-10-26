@@ -38,7 +38,7 @@ function App() {
 function send() {
   setstatus(true);
   axios
-    .post("http://localhost:5000/sendMail", { msg: msg, emailList: emailList })
+    .post("https://bulkmail-backend-git-main-infantas-projects.vercel.app/sendMail", { msg: msg, emailList: emailList })
     .then(function (response) {
       if (response.data.success === true) {
         alert(
